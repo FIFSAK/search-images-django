@@ -1,6 +1,6 @@
 # nFactorial-AI-Cup-AppTrack
 
-## < Your Name >
+## < Kurmanov Anuar >
 
 
 ## < Your App's Name >
