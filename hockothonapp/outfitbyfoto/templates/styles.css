@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.image-upload {
+  margin-bottom: 2rem;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+#results-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.result-item {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .result-item {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .result-item {
+    width: calc(33.333% - 1rem);
+  }
+}
