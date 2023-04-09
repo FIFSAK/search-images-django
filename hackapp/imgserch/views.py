@@ -4,10 +4,9 @@ from .models import Request
 
 # Create your views here.
 def index(request):
-    r = Request.objects.all()
-
-    return render(request, "imgserch/index.html", {'req': r})
+    return render(request, "imgserch/index.html")
 
 
 def result(request):
-    return render(request, "imgserch/result.html")
+    r = Request.objects.order_by("-id")[:-1]
+    return render(request, "imgserch/result.html", {'req': r})
