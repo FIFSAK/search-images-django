@@ -7,11 +7,11 @@ ENDPOINT = "https://api.pexels.com/v1/curated"
 
 def index(request):
     r = Request.objects.order_by('id').last()
+    Request.objects.all().delete()
     if request.method == 'POST':
         form = RequestForm(request.POST)
 
         if form.is_valid():
-            Request.objects.all().delete()
             form.save()
             return redirect('main')
 
